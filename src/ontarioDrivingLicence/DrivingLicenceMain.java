@@ -7,7 +7,7 @@ public class DrivingLicenceMain {
 		DrivingLicence dl = new DrivingLicence();
 
 		dl.name = "Gian Kaur";
-		dl.age = 20;
+		dl.age = 18;
 		dl.noOfQuestions = 40;
 		dl.noOfWrongAnswers = 5;
 		dl.noOfMonthsSinceG1Passed = 8;
