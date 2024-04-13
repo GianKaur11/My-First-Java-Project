@@ -7,14 +7,14 @@ public class DrivingLicenceMain {
 		DrivingLicence dl = new DrivingLicence();
 
 		dl.name = "Gian Kaur";
-		dl.age = 18;
+		dl.age = 15;
 		dl.noOfQuestions = 40;
-		dl.noOfWrongAnswers = 5;
+		dl.noOfWrongAnswers = 10;
 		dl.noOfMonthsSinceG1Passed = 8;
 		dl.noOfMonthsSinceG2Passed = 8;
 		dl.previousExperience = 1;
 		dl.isVisionTestPass = true;
-		dl.isRoadTestPass = true;
+		dl.isRoadTestPass = false;
 		dl.isHighwayRoadTestPass = true;
 		dl.isDrivingLicenceIssued();
 
