@@ -10,7 +10,7 @@ public class FillWaterTank {
 
 	void checkIfWaterTankIsFull() {
 
-		for (int capacity = 10; capacity <= 100; capacity = capacity + 10) {
+		for (int capacity = 0; capacity <= 100; capacity = capacity + 10) {
 
 			System.out.println("Tank has " + capacity + " litres of water in it.");
 			
