@@ -18,7 +18,9 @@ public class PizzaShop {
 
 	void calculatePizzaBill() {
 
-		System.out.println("Enter the size of pizza: ");
+		System.out.println("Enter the size of Cheeze pizza: ");
+
+		String additionalTopping;
 
 		String sizeOfPizza = sc.next();
 
@@ -26,37 +28,96 @@ public class PizzaShop {
 
 		case "Small":
 
-			System.out.println("Which pizza do you want: "
-					+ "Cheeze, Pepperoni or Pepperoni with extra cheeze");
+			System.out.println("Any additional topping?: " + "Extra Cheeze, Pepperoni, Pepperoni WIth Extra Cheeze");
 			price = 15;
-			String typeOfPizza = sc.next();
-			
-			if(typeOfPizza == "Cheeze") {
-			
-				System.out.println("Total bill: $"+ price);
-				
-			}else if (typeOfPizza == "Pepperoni") {
-				
+			additionalTopping = sc.next();
+
+			if (additionalTopping.matches("ExtraCheeze")) {
+
+				price = price + 1;
+
+				System.out.println("Your total bill is: $" + price);
+
+			} else if (additionalTopping.matches("Pepperoni")) {
+
 				price = price + 2;
+
+				System.out.println("Your total bill is: $" + price);
 				
-				System.out.println("Total bill: $"+ price);
-			}else if (typeOfPizza == "Pepperoni with extra cheeze") {
-                    
-				price = price +2 + 1;
+			} else if (additionalTopping.matches("PepperoniWithExtraCheeze")) {
+
+				price = price + 2 + 1;
+
+				System.out.println("Your total bill is: $" + price);
+
+			}else {
 				
-				System.out.println("Total bill: $"+ price);
-				
+				System.out.println("Your total bill is: $" + price);
 			}
-			
 
 			break;
 
 		case "Medium":
 
+			System.out.println("Any additional topping?: " + "Extra Cheeze, Pepperoni, Pepperoni With Extra Cheeze");
+			price = 20;
+			additionalTopping = sc.next();
+
+			if (additionalTopping.matches("ExtraCheeze")) {
+
+				price = price + 1;
+
+				System.out.println("Your total bill is: $" + price);
+
+			} else if (additionalTopping.matches("Pepperoni")) {
+
+				price = price + 3;
+
+				System.out.println("Your total bill is: $" + price);
+				
+			} else if (additionalTopping.matches("PepperoniWithExtraCheeze")) {
+
+				price = price + 3 + 1;
+
+				System.out.println("Your total bill is: $" + price);
+
+			}else {
+				
+				System.out.println("Your total bill is: $" + price);
+			}
+
+		
 			break;
 
 		case "Large":
 
+			System.out.println("Any additional topping?: " + "Extra Cheeze, Pepperoni, Pepperoni With Extra Cheeze");
+			price = 25;
+			additionalTopping = sc.next();
+
+			if (additionalTopping.matches("ExtraCheeze")) {
+
+				price = price + 1;
+
+				System.out.println("Your total bill is: $" + price);
+
+			} else if (additionalTopping.matches("Pepperoni")) {
+
+				price = price + 3;
+
+				System.out.println("Your total bill is: $" + price);
+				
+			} else if (additionalTopping.matches("PepperoniWithExtraCheeze")) {
+
+				price = price + 3 + 1;
+
+				System.out.println("Your total bill is: $" + price);
+
+			}else {
+				
+				System.out.println("Your total bill is: $" + price);
+			}
+		
 			break;
 
 		default:
@@ -65,5 +126,4 @@ public class PizzaShop {
 		}
 
 	}
-
 }
