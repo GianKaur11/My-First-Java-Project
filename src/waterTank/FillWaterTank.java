@@ -14,12 +14,10 @@ public class FillWaterTank {
 
 		for (int capacity = 0; capacity <= 100; capacity = capacity + 10) {
 
-			//System.out.println("You have " + noOfBuckets + " buckets in tank");
-
-			System.out.println("Tank has " + noOfBuckets + " buckets and "+ capacity + " litres of water in it.");
+			System.out.println("Tank has " + noOfBuckets + " buckets and " + capacity + " litres of water in it.");
 
 			noOfBuckets = noOfBuckets + 1;
-			
+
 			if (capacity == 100) {
 
 				System.out.println("Tank is full. There is no more capacity in it.");
