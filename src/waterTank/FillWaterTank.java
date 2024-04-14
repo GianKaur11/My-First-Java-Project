@@ -8,16 +8,22 @@ package waterTank;
 
 public class FillWaterTank {
 
+	int noOfBuckets;
+
 	void checkIfWaterTankIsFull() {
 
 		for (int capacity = 0; capacity <= 100; capacity = capacity + 10) {
 
-			System.out.println("Tank has " + capacity + " litres of water in it.");
+			//System.out.println("You have " + noOfBuckets + " buckets in tank");
+
+			System.out.println("Tank has " + noOfBuckets + " buckets and "+ capacity + " litres of water in it.");
+
+			noOfBuckets = noOfBuckets + 1;
 			
-			if(capacity == 100) {
-				
+			if (capacity == 100) {
+
 				System.out.println("Tank is full. There is no more capacity in it.");
-				
+
 			}
 
 		}
